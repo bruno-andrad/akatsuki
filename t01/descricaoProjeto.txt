@@ -1,0 +1,6 @@
+========================= Deploy de cluster kubernetes ========================
+
+Iremos subir um cluster kubernetes bare-metal provisionados em 3 instancias ec2 na aws. A configuracao sera:
+1 instancia master
+2 instancias workers
+O cluster kubernetes se enquadra na categoria de sistema distribuido por unir instancias e torna-las transparentes ao usuario final como se fossem apenas uma maquina isolada.
