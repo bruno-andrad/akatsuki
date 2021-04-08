@@ -1,3 +1,8 @@
 CORBA
 
-Uma das principais vantagens do CORBA sobre as outras soluções como DCOM e RMI, é que o CORBA possui uma alta flexibilidade quanto a plataforma de operação, ou seja, o CORBA permite a interoperabilidade de diferentes sistemas operacionais além de suportar diversas linguagens de programação.
+Uma das principais vantagens do CORBA sobre as outras soluções como DCOM e RMI,
+ é que o CORBA possui uma alta flexibilidade quanto a plataforma de operação, 
+ou seja, o CORBA permite a interoperabilidade de diferentes 
+sistemas operacionais além de suportar diversas linguagens de programação.
+
+O CORBA também possui midleware bem completo, contendo diversos serviços.
