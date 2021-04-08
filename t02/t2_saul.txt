@@ -1,0 +1,117 @@
+Aluno: Saul Nogueira Penha Paulino, 201751213897
+
+RPC 
+Tecnologia escolhida: CORBA
+
+O CORBA possui vários componentes, assim como as tecnologias RMI e DCOM. Seu diferencial entre elas está em alguns componentes. Veja abaixo uma comparação, antes da justificava final: 
+
+Implementação de Objeto
+
+CORBA:Diversos idiomas podem ser usados, desde que o IDL possa ser mapeado para esse idioma.
+
+RMI:Apenas a linguagem Java pode ser aplicada, porque o uso de serialização de objeto Java.
+
+DCOM:A especificação está no nível binário. Diversas linguagens como C ++, Java, Delphi e até mesmo COBOL podem ser usadas
+
+
+Interface cliente / servidor
+
+CORBA:O stub do cliente é chamado de stub e o lado do servidor é o esqueleto .
+
+RMI:O stub do cliente é chamado de stub e o lado do servidor é o esqueleto .
+
+DCOM: O stub do cliente é chamado de proxy e o lado do servidor é chamado de stub .
+
+
+Protocolo Remoto
+
+CORBA:Protocolo Inter-ORB da Internet (IIOP)
+
+RMI:Protocolo de método remoto Java (JRMP)
+
+DCOM: Chamada de procedimento remoto de objeto (ORPC)
+
+
+Identificação de Objeto
+
+CORBA:Referências de objeto (objref) são usadas como o identificador de objeto em tempo de execução.
+
+RMI:Um objeto de servidor remoto é atribuído com um ObjID como sua identificação.
+
+DCOM: O ponteiro da interface é usado como um identificador exclusivo para um objeto de servidor remoto.
+
+
+Localização e ativação do objeto
+
+
+CORBA:O ORB é usado para localizar um objeto e o Adaptador de Objeto é usado para ativação.
+
+RMI:A localização e ativação do objeto estão na Java Virtual Machine (JVM)
+
+DCOM: Use o Service Control Manager (SCM) para localizar e ativar um objeto.
+
+
+
+Herança
+
+CORBA:	Suporta herança múltipla no nível da interface. Cada interface herda de CORBA.Objec
+
+RMI:Suporta herança múltipla no nível da interface. Cada objeto implementa java.rmi.Remote
+
+DCOM: Suporta várias interfaces para objetos. Cada objeto implementa IUnknown .
+
+
+Ativação sob demanda
+
+CORBA:	Um cliente pode se vincular a um serviço de nomenclatura ou comerciante para ativar um objeto de servidor obtendo uma referência de servidor.
+
+RMI:Um cliente pode fazer um lookup () no nome da URL do objeto servidor remoto para obter a referência do objeto.
+
+DCOM: Um cliente pode fazer um CoCreateInstance () para ativar um objeto de servidor.
+
+
+
+
+Identificador de exceção
+
+CORBA:Exceções são lançadas na definição da interface. O tratamento de exceções é feito por Objetos de Exceção .
+
+RMI:Exceções são lançadas na definição da interface. As exceções são serializadas e empacotadas de volta ao longo da rede.
+
+DCOM: As exceções são lançadas para HRESULT para serem tratadas. Para um tratamento de exceção mais rico, ele usa Objetos de Erro e a interface ISupportErrorInfo deve ser implementada.
+
+
+Coleta de lixo
+
+CORBA:Não tenta realizar a coleta de lixo distribuída de propósito geral.
+
+RMI:Tenta executar a coleta de lixo distribuída de objetos de servidor remoto usando os mecanismos empacotados na JVM.
+
+DCOM: Tenta executar a coleta de lixo distribuída na rede por meio de ping. O protocolo de conexão DCOM usa um mecanismo de ping para coleta de lixo referências de objeto de servidor remoto.
+
+
+
+Justificava: por mais que muitos dos seus componentes em compativo as demais tecnologias tenham suporte também, ela demonstrou ter um diferencial quanto 
+sua implementação. Por mais que em uma implementação CORBA   sua maior parte de desenvolvimento tenha que ser realizado do zero,ela tem uma alta escabilidade quanto a reutilização de código existe, 
+e isso vem da capacidade como tecnologia.
+O CORBA também possui uma neutralidade de linguagem e isso permite a separação de sua interface de implementção, ou seja essa neutralidade de idioma permite que os 
+objetos sejam chamados sem levar conta o idioma do sistema operacional utilizado, sendo assim uma vantagem em comparação ao RMI. 
+Em relação a segurança do usuário, o CORBA também apresenta uma vantagem em relação ao DCOM, mas isso em questão a sua implementação, assim forncendo uma estrutura completa para segurança de objetos distribuídos,
+suporta autenticação, ACL e confidecialidade. O DCOM nessee requisito pode abordar mais skills por ter recursos mais avançados, porém o torna também um dos mais complicados de implementação de qualquer sistema distribuído. 
+Ressaltando quem em comparação aos RMI,DCOM e CORBA, o DCOM e CORBA tenham apresentado skills mais interessantes, seu comparativo acabou sendo direto , e isso levou em comparação também a 
+questão sobre suporte a fornecedores, dessa forma o CORBA em relação ao DCOM ganha novamente, apresentando vários forncedores enquanto o DCOM possui um único fornecedor. 
+Em comparativo com o RMI, o CORBA é um sistema ponto a ponto, enquanto o Java RMI é um modelo centrado no servidor, dessa forma o CORBA permite troca de informações de forma idependente.
+O CORBA também possui load balancing, permitindo que clientes realizem consultas por todos os objetos, desde que seja suportado por uma interface, isso atualmente não é suportado pelo DCOM. 
+
+
+
+
+Referencias: 
+
+https://research.cs.queensu.ca/home/xiao/DS/node9.html
+https://www.geeksforgeeks.org/difference-between-corba-and-dcom/?ref=rp
+https://www.geeksforgeeks.org/difference-between-rmi-and-corba/?ref=rp
+https://www.ime.usp.br/~reverbel/SOD-97/Textos/dcom_corba/Paper.html
+
+
+
