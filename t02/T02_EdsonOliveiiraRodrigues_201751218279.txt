@@ -1,0 +1,13 @@
+Sistemas Distribuídos                                                        Profº.: Santiago Robles
+Nome: Edson Oliveira Rodrigues
+RA: 201751218279
+
+CORBA
+Entre as tecnologias RPC apresentadas, escolhi a CORBA (abreviado de Common Object Request Broker Architecture)
+pois se trata de uma plataforma muito madura se comparada com as outras tecnologias apresentadas devido ao número
+efetivo de sistemas desenvolvidos e que ainda estão em desenvolvimento, além da maturidade o CORBA possui algumas
+características que o colocam a frente das outras tecnologias como por exemplo seu suporte a inúmeras linguagens
+através do mapeamentos IDL, o suporte multiplataformas que desde o inicio foi um dos aspectos centrais desta
+arquitetura, a fiabilidade em transações e na transmissão e recepção de mensagens, a segurança que já foi considerada
+uma das melhores especificações existentes para computação distribuída considerando integridade, responsabilidade,
+disponibilidade,  confidencialidade e não-repudiação.
