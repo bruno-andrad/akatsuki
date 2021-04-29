@@ -1,0 +1,6 @@
+Sistema distribuido utilizando Kubernetes
+
+Nosso trabalho é baseado na construção de um cluster kubernetes
+cuja função é hospedar e gerenciar uma aplicação. Para este trabalho
+escolhemos o NGINX. Desta forma, há 10 containers para o mesmo service
+de nginx sendo executados em 10 pods diferentes, distribuidos em 3 hosts.
