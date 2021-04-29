@@ -3,3 +3,9 @@ AV1
 
 T-01 = 1.5 pts
 
+T-2 :
+
+	Bruno	= 1.0 pt
+	Edosn	= 1.0 pt
+	Saul	= 1.0 pt
+
