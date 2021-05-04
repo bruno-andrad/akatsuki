@@ -9,3 +9,5 @@ T-2 :
 	Edosn	= 1.0 pt
 	Saul	= 1.0 pt
 
+T-03 = 2.5 pts
+
